@@ -1,0 +1,88 @@
+body {
+    background-color: #ebebf3;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    font-size: 0.5cm;
+    border-radius: 10%;
+  }
+  
+  
+  .grid-container {
+    border:3px solid black;
+    width: 320px;
+    background-color: #948d8d;
+    display : grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px;
+    justify-content: center;
+  }
+  
+  #display {
+    text-align: right;
+    width: 320px;
+    height: 80px;
+    grid-area: 1 / 1 / span 1 / span 4;
+    background-color: burlywood;
+  }
+/*   
+.show-result{
+  border-top: 1px solid #000;
+  
+}
+
+.show-inputs {
+  border-bottom: 1px solid #000;
+} */
+
+  .show-inputs, .show-result {
+    width: auto;
+    height: 50%;
+    display: block;
+    font-size: 0.8cm;
+    color: rgb(112, 109, 107);
+    border-bottom: 2px solid #000;
+  }
+  
+  
+  #clear {
+    
+    color: white;
+    background-color: crimson;
+    grid-area: 2 / 1 / span 1 / span 2;
+  }
+  
+  #equals {
+    color: white;
+    background-color: rgb(59, 59, 189);
+    grid-area: 5 / 4 / span 2 / span 1;
+  }
+  
+  #zero {
+    grid-area: 6 / 1 / span 1 / span 2;
+  }
+  
+  #divide {
+    background-color: rgb(174, 228, 230);
+    grid-area: 2 / 3 / span 1 / span 1;
+  }
+  
+  #multiply {
+    background-color: rgb(174, 228, 230);
+    grid-area: 2 / 4 / span 1 / span 1;
+  }
+  
+  #add {
+    background-color: rgb(174, 228, 230);
+    grid-area: 3 / 4 / span 1 / span 1;
+  }
+  
+  
+  #subtract {
+    background-color: rgb(174, 228, 230);
+    grid-area: 4 / 4 / span 1 / span 1;
+  }
